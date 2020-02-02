@@ -24,11 +24,11 @@
 
 <div class="box" id="box">
 
-      <img id="img" src="images/1.png" alt="我是图片" width="800px" height="1400px"/>
+      <img id="img" src="images/1.jpg" alt="我是图片" width="800px" height="1400px"/>
       <br/>
       <hr size="3" color="red" />
       <a id="link" href="#">下一张</a>
-      <span id="sp">共383张:第1张</span>
+      <span id="sp">共100张:第1张</span>
       <a id="link1" href="#">上一张</a>
     </div>
 </div>
@@ -70,11 +70,11 @@
     link.onclick=function(){
                             var next=document.getElementById("img");//获取图片Id
                             i+=1;
-                            next.src="images/"+i+".png";//重新给src赋值
+                            next.src="images/"+i+".jpg";//重新给src赋值
                             var dc=document.getElementById("sp");
-                                dc.innerHTML="共383张:第"+i+"张";
+                                dc.innerHTML="共100张:第"+i+"张";
 
-                             if(i===383){
+                             if(i===99){
                                    i=1;
                                    }
                               console.info("共383张图片:"+
@@ -90,12 +90,12 @@
                             var next=document.getElementById("img");//获取图片Id
                             i-=1;
                             var dc=document.getElementById("sp");
-                                dc.innerHTML="共383张:第"+i+"张";
-                            next.src="images/"+i+".png";//重新给src赋值
+                                dc.innerHTML="共100张:第"+i+"张";
+                            next.src="images/"+i+".jpg";//重新给src赋值
                              if(i<=0){
-                                   i=383;
+                                   i=99;
                                    }
-                              console.info("共384张图片:"+
+                              console.info("共张图片:"+
                                             "第"+i+"图片");
                           return false;
                           }
